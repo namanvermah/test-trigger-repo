@@ -1,0 +1,23 @@
+inputSet:
+  identifier: "gdiyd_one"
+  name: "gdiyd_one"
+  orgIdentifier: "default"
+  projectIdentifier: "GS_Manager"
+  pipeline:
+    identifier: "gdiyd"
+    stages:
+    - stage:
+        identifier: "a1"
+        type: "Custom"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "echo"
+                type: "ShellScript"
+                spec:
+                  source:
+                    type: "Inline"
+                    spec:
+                      script: "echo 1"
+                timeout: "1m"
